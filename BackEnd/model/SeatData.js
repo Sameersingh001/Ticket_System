@@ -1,6 +1,10 @@
 import mongoose from 'mongoose';
 
 const seatDataSchema = new mongoose.Schema({
+    seatname: {
+        type: String,
+        required: true,
+    },
     seatNumber: {
         type: String,
         required: true,
@@ -13,3 +17,5 @@ const seatDataSchema = new mongoose.Schema({
 }, { timestamps: true });
 
 const SeatData = mongoose.model('SeatData', seatDataSchema, 'SeatData');
+
+export default SeatData;

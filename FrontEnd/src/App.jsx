@@ -2,7 +2,8 @@ import React from 'react'
 import RegisterPage from './AuthComponents/RegisterPage'
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom'
 import Login from './AuthComponents/LoginPage'
-import SeatBooking from './Pages/SeatBokoing'
+import Dashboard from './Pages/Dashboard'
+import AddSeat from './Pages/SeatAdded'
 
 const App = () => {
   return (
@@ -13,7 +14,9 @@ const App = () => {
 
         <Route path="/" element={<RegisterPage />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/dashboard" element={<SeatBooking />} />
+        <Route path="/seat-adder" element={<AddSeat />} />
+
+        <Route path="/dashboard" element={<Dashboard />} />
 
         
         </Routes>

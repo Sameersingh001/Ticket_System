@@ -5,6 +5,7 @@ import cors from 'cors';
 
 
 import authRoutes from './routes/authRoutes.js';
+import seatRoutes from './routes/seatRoutes.js';
 
 
 const app = express();
@@ -17,6 +18,7 @@ app.use(express.urlencoded({ extended: true }));
 
 
 app.use('/api', authRoutes);
+app.use('/api', seatRoutes);
 
 
 connectDB().then(() => {

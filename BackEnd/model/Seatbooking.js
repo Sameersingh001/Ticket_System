@@ -16,3 +16,5 @@ const seatBookingSchema = new mongoose.Schema({
 }, { timestamps: true });
 
 const SeatBooking = mongoose.model('SeatBooking', seatBookingSchema, 'SeatBookings');
+
+export default SeatBooking;
